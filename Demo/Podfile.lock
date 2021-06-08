@@ -1,0 +1,34 @@
+PODS:
+  - AutoScrollLabel (0.4.3)
+  - HapticHelper (1.0.1)
+  - MobileVLCKit (3.2.0)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - youtube-ios-player-helper (0.1.6)
+
+DEPENDENCIES:
+  - AutoScrollLabel
+  - HapticHelper (~> 1.0)
+  - MobileVLCKit
+  - SDWebImage (~> 3.7)
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - AutoScrollLabel
+    - HapticHelper
+    - MobileVLCKit
+    - SDWebImage
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  AutoScrollLabel: bee53a1d4532569b49cbecaf9b80ca003bed3767
+  HapticHelper: 0cccef18b9612abbc7881a8e7d5fbc144face328
+  MobileVLCKit: f7af7d6bee693b904265768eaae6a0ed29fdcd65
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+
+PODFILE CHECKSUM: 9db5fcdd71c4f26c6dcb89d92f200379388065b0
+
+COCOAPODS: 1.9.0

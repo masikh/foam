@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C80497E2212D46F00B9C29E /* VideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C80497D2212D46F00B9C29E /* VideoPlayerViewController.m */; };
+		4522516916123719007FEECC /* CAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 452250F016123719007FEECC /* CAppDelegate.m */; };
+		4522516A16123719007FEECC /* CDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 452250F216123719007FEECC /* CDemoCollectionViewCell.m */; };
+		4522516B16123719007FEECC /* CDemoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452250F416123719007FEECC /* CDemoCollectionViewController.m */; };
+		4522517116123719007FEECC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 452250FC16123719007FEECC /* MainStoryboard.storyboard */; };
+		452251DB16123719007FEECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4522516816123719007FEECC /* main.m */; };
+		452251E716124093007FEECC /* CCoverflowTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 452251E616124093007FEECC /* CCoverflowTitleView.xib */; };
+		452251EA161240A6007FEECC /* CCoverflowTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452251E9161240A6007FEECC /* CCoverflowTitleView.m */; };
+		456BDDD41610896400398F00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456BDDD31610896400398F00 /* UIKit.framework */; };
+		456BDDD61610896400398F00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456BDDD51610896400398F00 /* Foundation.framework */; };
+		456BDDD81610896400398F00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456BDDD71610896400398F00 /* CoreGraphics.framework */; };
+		456BDE0716108D7A00398F00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456BDE0616108D7A00398F00 /* QuartzCore.framework */; };
+		4576D0BA161236A10006877C /* CBetterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576D0AF161236A10006877C /* CBetterCollectionViewCell.m */; };
+		4576D0BB161236A10006877C /* CBetterCollectionViewLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576D0B1161236A10006877C /* CBetterCollectionViewLayoutAttributes.m */; };
+		4576D0BC161236A10006877C /* CCoverflowCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4576D0B3161236A10006877C /* CCoverflowCollectionViewLayout.m */; };
+		4576D0BD161236A10006877C /* CInterpolator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4576D0B5161236A10006877C /* CInterpolator.mm */; };
+		4576D0BE161236A10006877C /* Interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4576D0B6161236A10006877C /* Interpolator.cpp */; };
+		45C56F3F1612A5120066CADB /* CReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45C56F3E1612A5120066CADB /* CReflectionView.m */; };
+		571B86E27F7F30C0C31C23DE /* libPods-FOAM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2250026D122782C334F6848A /* libPods-FOAM.a */; };
+		E10EFB071CC13FA10002892A /* MetaDataViewMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = E10EFB061CC13FA10002892A /* MetaDataViewMovies.m */; };
+		E10EFB0E1CC165B00002892A /* back3.png in Resources */ = {isa = PBXBuildFile; fileRef = E10EFB0D1CC165B00002892A /* back3.png */; };
+		E10EFB431CC2688B0002892A /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E10EFB421CC2688B0002892A /* ImageLoader.m */; };
+		E11770C51C5D2B9200166CE6 /* config.png in Resources */ = {isa = PBXBuildFile; fileRef = E11770C41C5D2B9200166CE6 /* config.png */; };
+		E11770CD1C5D52BE00166CE6 /* compression.png in Resources */ = {isa = PBXBuildFile; fileRef = E11770CC1C5D52BE00166CE6 /* compression.png */; };
+		E117CA5C1DFC7309001A8D9C /* FetchContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = E117CA5B1DFC7309001A8D9C /* FetchContentData.m */; };
+		E117CA661DFD90A1001A8D9C /* tvshow-active.png in Resources */ = {isa = PBXBuildFile; fileRef = E117CA601DFD90A1001A8D9C /* tvshow-active.png */; };
+		E117CA671DFD90A1001A8D9C /* movies-active.png in Resources */ = {isa = PBXBuildFile; fileRef = E117CA611DFD90A1001A8D9C /* movies-active.png */; };
+		E117CA681DFD90A1001A8D9C /* movies-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = E117CA621DFD90A1001A8D9C /* movies-inactive.png */; };
+		E117CA691DFD90A1001A8D9C /* tvshow-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = E117CA631DFD90A1001A8D9C /* tvshow-inactive.png */; };
+		E117CA6A1DFD90A1001A8D9C /* livetv-active.png in Resources */ = {isa = PBXBuildFile; fileRef = E117CA641DFD90A1001A8D9C /* livetv-active.png */; };
+		E117CA6B1DFD90A1001A8D9C /* livetv-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = E117CA651DFD90A1001A8D9C /* livetv-inactive.png */; };
+		E12C34C91C37139B00BC94CE /* cloud-reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E12C34C81C37139B00BC94CE /* cloud-reload.png */; };
+		E12C34CF1C38926800BC94CE /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E12C34CE1C38926800BC94CE /* back.png */; };
+		E12C34D11C3897F600BC94CE /* Trailers.png in Resources */ = {isa = PBXBuildFile; fileRef = E12C34D01C3897F600BC94CE /* Trailers.png */; };
+		E12C34D31C38995700BC94CE /* Movies.png in Resources */ = {isa = PBXBuildFile; fileRef = E12C34D21C38995700BC94CE /* Movies.png */; };
+		E12C34D61C3951E900BC94CE /* UIImageAverageColorAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C34D51C3951E900BC94CE /* UIImageAverageColorAddition.m */; };
+		E12C34D91C39573300BC94CE /* UIImageBurnColorAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C34D81C39573300BC94CE /* UIImageBurnColorAddition.m */; };
+		E13B43D5227206DE007C80B9 /* 1x1-transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = E13B43D4227206DD007C80B9 /* 1x1-transparent.png */; };
+		E13C4E2E2228D1CF005B87E2 /* tablet.png in Resources */ = {isa = PBXBuildFile; fileRef = E13C4E2D2228D1CF005B87E2 /* tablet.png */; };
+		E145E26A2218C7EA00AD99BD /* play_big.png in Resources */ = {isa = PBXBuildFile; fileRef = E145E2682218C7EA00AD99BD /* play_big.png */; };
+		E145E26B2218C7EA00AD99BD /* pause_big.png in Resources */ = {isa = PBXBuildFile; fileRef = E145E2692218C7EA00AD99BD /* pause_big.png */; };
+		E145E26D2218CCDE00AD99BD /* blue_slider_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = E145E26C2218CCDE00AD99BD /* blue_slider_thumb.png */; };
+		E1497AF7238DBA5D0050286E /* play-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = E1497AF4238DBA5D0050286E /* play-yellow.png */; };
+		E1497AF8238DBA5D0050286E /* play-yellow-trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = E1497AF5238DBA5D0050286E /* play-yellow-trailer.png */; };
+		E1497AF9238DBA5D0050286E /* play-yellow-kodi.png in Resources */ = {isa = PBXBuildFile; fileRef = E1497AF6238DBA5D0050286E /* play-yellow-kodi.png */; };
+		E1550AD21CC4CA090034C130 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1550AD11CC4CA090034C130 /* InfoPlist.strings */; };
+		E15EC4A22221E4A70021D311 /* KodiControls.m in Sources */ = {isa = PBXBuildFile; fileRef = E15EC4A12221E4A70021D311 /* KodiControls.m */; };
+		E15EC4A52222F6720021D311 /* remoteKODI.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EC4A42222F6720021D311 /* remoteKODI.png */; };
+		E15EC4AB22235B890021D311 /* stop_big.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EC4AA22235B890021D311 /* stop_big.png */; };
+		E15EC4AD22235B920021D311 /* playpause_big.png in Resources */ = {isa = PBXBuildFile; fileRef = E15EC4AC22235B920021D311 /* playpause_big.png */; };
+		E1709AF9220DBECB00A7206D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1709AF8220DBECB00A7206D /* Settings.bundle */; };
+		E184B400222032BD0004E817 /* placeholderEpisode.png in Resources */ = {isa = PBXBuildFile; fileRef = E184B3FF222032BD0004E817 /* placeholderEpisode.png */; };
+		E186AD5A1C0A37AC009F94F4 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = E186AD591C0A37AC009F94F4 /* loading.gif */; };
+		E18A036A1C90D60C0013BF7A /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = E18A03691C90D60C0013BF7A /* back2.png */; };
+		E19360A223AD80CE007D20AE /* isReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = E19360A123AD80CE007D20AE /* isReachable.m */; };
+		E19C0AAD1C94899A00D031CB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19C0AAC1C94899A00D031CB /* Default-568h@2x.png */; };
+		E1A124201C8BA09700625116 /* configKodi.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1A1241F1C8BA09700625116 /* configKodi.plist */; };
+		E1A208B31C960DBE002E5E2D /* checkFail.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A208B11C960DBE002E5E2D /* checkFail.png */; };
+		E1A208B41C960DBE002E5E2D /* checkPass.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A208B21C960DBE002E5E2D /* checkPass.png */; };
+		E1A6D3712279C18400EA49B3 /* mirror_active.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A6D36F2279C17900EA49B3 /* mirror_active.png */; };
+		E1A6D3722279C18400EA49B3 /* mirror_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A6D3702279C18400EA49B3 /* mirror_inactive.png */; };
+		E1A78D7E1C84D72F0064CC68 /* black.gif in Resources */ = {isa = PBXBuildFile; fileRef = E1A78D7D1C84D72F0064CC68 /* black.gif */; };
+		E1AF786E1D16FEDE00E3D12C /* trailer.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AF786D1D16FEDE00E3D12C /* trailer.png */; };
+		E1AF78701D16FEE500E3D12C /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = E1AF786F1D16FEE500E3D12C /* play.png */; };
+		E1B3B3CB1E06EB5C007DC158 /* MetaDataViewTVShows.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B3B3CA1E06EB5C007DC158 /* MetaDataViewTVShows.m */; };
+		E1C865A41C4337CF004E6E6A /* CircularNSMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C865A31C4337CF004E6E6A /* CircularNSMutableArray.m */; };
+		E1CCC6F52270F54E00F317A8 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1CCC6F42270F54E00F317A8 /* ReplayKit.framework */; };
+		E1D0853C1C8B4C8700114563 /* playOnKodiActive.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D0853A1C8B4C8700114563 /* playOnKodiActive.png */; };
+		E1D0853D1C8B4C8700114563 /* playOnKodiInActive.png in Resources */ = {isa = PBXBuildFile; fileRef = E1D0853B1C8B4C8700114563 /* playOnKodiInActive.png */; };
+		E1E383951C1C55BD000ACF0A /* DeviceIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E383941C1C55BD000ACF0A /* DeviceIdentifier.m */; };
+		E1F610F71C94B9870044ABAF /* KodiConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E1F610F61C94B9870044ABAF /* KodiConfig.m */; };
+		E1F7148B240092BD007844F6 /* remote-yellow-kodi.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F7148A240092BD007844F6 /* remote-yellow-kodi.png */; };
+		E1F788E8221AEDE700807BB3 /* Subtitles.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F788E6221AEDE700807BB3 /* Subtitles.png */; };
+		E1F788E9221AEDE700807BB3 /* AudioChannel.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F788E7221AEDE700807BB3 /* AudioChannel.png */; };
+		E1F788EF221CBF1600807BB3 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F788EE221CBF1600807BB3 /* SplashScreen.png */; };
+		E1F788F5221DA7C400807BB3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F788F4221DA7C400807BB3 /* Icon@2x.png */; };
+		E1F788F7221DA86500807BB3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F788F6221DA86400807BB3 /* Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1BB13881C0AA5B20027CC77 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CC607D2EB2C0AD1DE72D8CD /* Pods-FOAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAM.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOAM/Pods-FOAM.release.xcconfig"; sourceTree = "<group>"; };
+		2250026D122782C334F6848A /* libPods-FOAM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOAM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C80497C2212D46F00B9C29E /* VideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayerViewController.h; sourceTree = "<group>"; };
+		2C80497D2212D46F00B9C29E /* VideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerViewController.m; sourceTree = "<group>"; };
+		452250EF16123719007FEECC /* CAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAppDelegate.h; sourceTree = "<group>"; };
+		452250F016123719007FEECC /* CAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAppDelegate.m; sourceTree = "<group>"; };
+		452250F116123719007FEECC /* CDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		452250F216123719007FEECC /* CDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		452250F316123719007FEECC /* CDemoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDemoCollectionViewController.h; sourceTree = "<group>"; };
+		452250F416123719007FEECC /* CDemoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDemoCollectionViewController.m; sourceTree = "<group>"; };
+		452250F516123719007FEECC /* FOAM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FOAM-Info.plist"; sourceTree = "<group>"; };
+		452250F616123719007FEECC /* FOAM-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FOAM-Prefix.pch"; sourceTree = "<group>"; };
+		4522516816123719007FEECC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		452251E616124093007FEECC /* CCoverflowTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCoverflowTitleView.xib; sourceTree = "<group>"; };
+		452251E8161240A6007FEECC /* CCoverflowTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCoverflowTitleView.h; sourceTree = "<group>"; };
+		452251E9161240A6007FEECC /* CCoverflowTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCoverflowTitleView.m; sourceTree = "<group>"; };
+		456BDDCF1610896400398F00 /* FOAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		456BDDD31610896400398F00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		456BDDD51610896400398F00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		456BDDD71610896400398F00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		456BDE0616108D7A00398F00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4576D0AE161236A10006877C /* CBetterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBetterCollectionViewCell.h; sourceTree = "<group>"; };
+		4576D0AF161236A10006877C /* CBetterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBetterCollectionViewCell.m; sourceTree = "<group>"; };
+		4576D0B0161236A10006877C /* CBetterCollectionViewLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBetterCollectionViewLayoutAttributes.h; sourceTree = "<group>"; };
+		4576D0B1161236A10006877C /* CBetterCollectionViewLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBetterCollectionViewLayoutAttributes.m; sourceTree = "<group>"; };
+		4576D0B2161236A10006877C /* CCoverflowCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCoverflowCollectionViewLayout.h; sourceTree = "<group>"; };
+		4576D0B3161236A10006877C /* CCoverflowCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCoverflowCollectionViewLayout.m; sourceTree = "<group>"; };
+		4576D0B4161236A10006877C /* CInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CInterpolator.h; sourceTree = "<group>"; };
+		4576D0B5161236A10006877C /* CInterpolator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CInterpolator.mm; sourceTree = "<group>"; };
+		4576D0B6161236A10006877C /* Interpolator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interpolator.cpp; sourceTree = "<group>"; };
+		4576D0B7161236A10006877C /* Interpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interpolator.h; sourceTree = "<group>"; };
+		458DD6151610F71C00DB2DD2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		45C56F3D1612A5120066CADB /* CReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CReflectionView.h; sourceTree = "<group>"; };
+		45C56F3E1612A5120066CADB /* CReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CReflectionView.m; sourceTree = "<group>"; };
+		CF5961CACFE3B6610C1AE6EB /* Pods-FOAM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOAM/Pods-FOAM.debug.xcconfig"; sourceTree = "<group>"; };
+		E10EFB051CC13F850002892A /* MetaDataViewMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaDataViewMovies.h; sourceTree = "<group>"; };
+		E10EFB061CC13FA10002892A /* MetaDataViewMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaDataViewMovies.m; sourceTree = "<group>"; };
+		E10EFB0D1CC165B00002892A /* back3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back3.png; sourceTree = "<group>"; };
+		E10EFB411CC268740002892A /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
+		E10EFB421CC2688B0002892A /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoader.m; sourceTree = "<group>"; };
+		E11770C41C5D2B9200166CE6 /* config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = config.png; sourceTree = "<group>"; };
+		E11770CC1C5D52BE00166CE6 /* compression.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compression.png; sourceTree = "<group>"; };
+		E117CA5B1DFC7309001A8D9C /* FetchContentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchContentData.m; sourceTree = "<group>"; };
+		E117CA5D1DFC731F001A8D9C /* FetchContentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchContentData.h; sourceTree = "<group>"; };
+		E117CA601DFD90A1001A8D9C /* tvshow-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tvshow-active.png"; sourceTree = "<group>"; };
+		E117CA611DFD90A1001A8D9C /* movies-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movies-active.png"; sourceTree = "<group>"; };
+		E117CA621DFD90A1001A8D9C /* movies-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movies-inactive.png"; sourceTree = "<group>"; };
+		E117CA631DFD90A1001A8D9C /* tvshow-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tvshow-inactive.png"; sourceTree = "<group>"; };
+		E117CA641DFD90A1001A8D9C /* livetv-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "livetv-active.png"; sourceTree = "<group>"; };
+		E117CA651DFD90A1001A8D9C /* livetv-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "livetv-inactive.png"; sourceTree = "<group>"; };
+		E12C34C81C37139B00BC94CE /* cloud-reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-reload.png"; sourceTree = "<group>"; };
+		E12C34CE1C38926800BC94CE /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		E12C34D01C3897F600BC94CE /* Trailers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Trailers.png; sourceTree = "<group>"; };
+		E12C34D21C38995700BC94CE /* Movies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Movies.png; sourceTree = "<group>"; };
+		E12C34D41C39518700BC94CE /* UIImageAverageColorAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAverageColorAddition.h; sourceTree = "<group>"; };
+		E12C34D51C3951E900BC94CE /* UIImageAverageColorAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageAverageColorAddition.m; sourceTree = "<group>"; };
+		E12C34D71C39569C00BC94CE /* UIImageBurnColorAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageBurnColorAddition.h; sourceTree = "<group>"; };
+		E12C34D81C39573300BC94CE /* UIImageBurnColorAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageBurnColorAddition.m; sourceTree = "<group>"; };
+		E13B43D4227206DD007C80B9 /* 1x1-transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1x1-transparent.png"; sourceTree = "<group>"; };
+		E13C4E2D2228D1CF005B87E2 /* tablet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablet.png; sourceTree = "<group>"; };
+		E145E2682218C7EA00AD99BD /* play_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_big.png; sourceTree = "<group>"; };
+		E145E2692218C7EA00AD99BD /* pause_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_big.png; sourceTree = "<group>"; };
+		E145E26C2218CCDE00AD99BD /* blue_slider_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_slider_thumb.png; sourceTree = "<group>"; };
+		E1497AF4238DBA5D0050286E /* play-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-yellow.png"; sourceTree = "<group>"; };
+		E1497AF5238DBA5D0050286E /* play-yellow-trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-yellow-trailer.png"; sourceTree = "<group>"; };
+		E1497AF6238DBA5D0050286E /* play-yellow-kodi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-yellow-kodi.png"; sourceTree = "<group>"; };
+		E1550AD11CC4CA090034C130 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		E158F3B32221E2E800C26225 /* KodiControls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KodiControls.h; sourceTree = "<group>"; };
+		E15EC4A12221E4A70021D311 /* KodiControls.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KodiControls.m; sourceTree = "<group>"; };
+		E15EC4A42222F6720021D311 /* remoteKODI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remoteKODI.png; sourceTree = "<group>"; };
+		E15EC4AA22235B890021D311 /* stop_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop_big.png; sourceTree = "<group>"; };
+		E15EC4AC22235B920021D311 /* playpause_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playpause_big.png; sourceTree = "<group>"; };
+		E1709AF8220DBECB00A7206D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Coverflow/Settings.bundle; sourceTree = "<group>"; };
+		E184B3FF222032BD0004E817 /* placeholderEpisode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholderEpisode.png; sourceTree = "<group>"; };
+		E186AD591C0A37AC009F94F4 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
+		E18A03691C90D60C0013BF7A /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
+		E19360A123AD80CE007D20AE /* isReachable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = isReachable.m; sourceTree = "<group>"; };
+		E19360A323AD8167007D20AE /* isReachable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isReachable.h; sourceTree = "<group>"; };
+		E19C0AAC1C94899A00D031CB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		E1A1241F1C8BA09700625116 /* configKodi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = configKodi.plist; sourceTree = "<group>"; };
+		E1A208B11C960DBE002E5E2D /* checkFail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkFail.png; sourceTree = "<group>"; };
+		E1A208B21C960DBE002E5E2D /* checkPass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkPass.png; sourceTree = "<group>"; };
+		E1A6D36F2279C17900EA49B3 /* mirror_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirror_active.png; sourceTree = "<group>"; };
+		E1A6D3702279C18400EA49B3 /* mirror_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirror_inactive.png; sourceTree = "<group>"; };
+		E1A78D7D1C84D72F0064CC68 /* black.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = black.gif; sourceTree = "<group>"; };
+		E1AF786D1D16FEDE00E3D12C /* trailer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trailer.png; sourceTree = "<group>"; };
+		E1AF786F1D16FEE500E3D12C /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		E1B3B3C91E06EB34007DC158 /* MetaDataViewTVShows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaDataViewTVShows.h; sourceTree = "<group>"; };
+		E1B3B3CA1E06EB5C007DC158 /* MetaDataViewTVShows.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaDataViewTVShows.m; sourceTree = "<group>"; };
+		E1C865A31C4337CF004E6E6A /* CircularNSMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularNSMutableArray.m; sourceTree = "<group>"; };
+		E1C865A51C433826004E6E6A /* CircularNSMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularNSMutableArray.h; sourceTree = "<group>"; };
+		E1CCC6F42270F54E00F317A8 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		E1D0853A1C8B4C8700114563 /* playOnKodiActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playOnKodiActive.png; sourceTree = "<group>"; };
+		E1D0853B1C8B4C8700114563 /* playOnKodiInActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playOnKodiInActive.png; sourceTree = "<group>"; };
+		E1E383941C1C55BD000ACF0A /* DeviceIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceIdentifier.m; sourceTree = "<group>"; };
+		E1E383961C1C560E000ACF0A /* DeviceIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceIdentifier.h; sourceTree = "<group>"; };
+		E1F610F61C94B9870044ABAF /* KodiConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KodiConfig.m; sourceTree = "<group>"; };
+		E1F610F81C94B9990044ABAF /* KodiConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KodiConfig.h; sourceTree = "<group>"; };
+		E1F7148A240092BD007844F6 /* remote-yellow-kodi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remote-yellow-kodi.png"; sourceTree = "<group>"; };
+		E1F788E6221AEDE700807BB3 /* Subtitles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Subtitles.png; sourceTree = "<group>"; };
+		E1F788E7221AEDE700807BB3 /* AudioChannel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudioChannel.png; sourceTree = "<group>"; };
+		E1F788EE221CBF1600807BB3 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
+		E1F788F4221DA7C400807BB3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		E1F788F6221DA86400807BB3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E1F85846240AD09D00B0BC56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456BDDCC1610896400398F00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CCC6F52270F54E00F317A8 /* ReplayKit.framework in Frameworks */,
+				456BDE0716108D7A00398F00 /* QuartzCore.framework in Frameworks */,
+				456BDDD41610896400398F00 /* UIKit.framework in Frameworks */,
+				456BDDD61610896400398F00 /* Foundation.framework in Frameworks */,
+				456BDDD81610896400398F00 /* CoreGraphics.framework in Frameworks */,
+				571B86E27F7F30C0C31C23DE /* libPods-FOAM.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		452250EE16123719007FEECC /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E19360A023AD8089007D20AE /* isReachable */,
+				E1F610F91C94B9A50044ABAF /* KodiConfig */,
+				E15EC4A32221E4B60021D311 /* KodiControls */,
+				E1F788E5221AD21800807BB3 /* MobileVLCKitPlayer */,
+				E19C0AAB1C9488B600D031CB /* images */,
+				E117CA5A1DFC7284001A8D9C /* AppDelegates */,
+				E117CA591DFC7270001A8D9C /* CollectionView */,
+				E10EFB441CC268930002892A /* ImageLoader */,
+				E10EFB081CC13FA90002892A /* MetaDataView */,
+				E1B3B3C71E06E7F3007DC158 /* FOAM */,
+				E1B3B3C81E06E814007DC158 /* MainFiles */,
+				E117CA5F1DFD8736001A8D9C /* CoverflowTitleView */,
+				E1F610F41C94B6C60044ABAF /* ImageColorManipulator */,
+				E1F610F51C94B6DF0044ABAF /* CircularArray */,
+				E117CA5E1DFC7328001A8D9C /* FetchContentData */,
+			);
+			name = Demo;
+			path = Coverflow;
+			sourceTree = "<group>";
+		};
+		456BDDC41610896400398F00 = {
+			isa = PBXGroup;
+			children = (
+				E1709AF8220DBECB00A7206D /* Settings.bundle */,
+				4576D0AD161236A10006877C /* Coverflow */,
+				452250EE16123719007FEECC /* Demo */,
+				456BDDD21610896400398F00 /* Frameworks */,
+				456BDDD01610896400398F00 /* Products */,
+				552AA528E476451738AE6EAA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		456BDDD01610896400398F00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456BDDCF1610896400398F00 /* FOAM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456BDDD21610896400398F00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1CCC6F42270F54E00F317A8 /* ReplayKit.framework */,
+				458DD6151610F71C00DB2DD2 /* AssetsLibrary.framework */,
+				456BDE0616108D7A00398F00 /* QuartzCore.framework */,
+				456BDDD31610896400398F00 /* UIKit.framework */,
+				456BDDD51610896400398F00 /* Foundation.framework */,
+				456BDDD71610896400398F00 /* CoreGraphics.framework */,
+				2250026D122782C334F6848A /* libPods-FOAM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4576D0AD161236A10006877C /* Coverflow */ = {
+			isa = PBXGroup;
+			children = (
+				4576D0AE161236A10006877C /* CBetterCollectionViewCell.h */,
+				4576D0AF161236A10006877C /* CBetterCollectionViewCell.m */,
+				4576D0B0161236A10006877C /* CBetterCollectionViewLayoutAttributes.h */,
+				4576D0B1161236A10006877C /* CBetterCollectionViewLayoutAttributes.m */,
+				4576D0B2161236A10006877C /* CCoverflowCollectionViewLayout.h */,
+				4576D0B3161236A10006877C /* CCoverflowCollectionViewLayout.m */,
+				4576D0B4161236A10006877C /* CInterpolator.h */,
+				4576D0B5161236A10006877C /* CInterpolator.mm */,
+				4576D0B6161236A10006877C /* Interpolator.cpp */,
+				4576D0B7161236A10006877C /* Interpolator.h */,
+				45C56F3D1612A5120066CADB /* CReflectionView.h */,
+				45C56F3E1612A5120066CADB /* CReflectionView.m */,
+				E1E383941C1C55BD000ACF0A /* DeviceIdentifier.m */,
+				E1E383961C1C560E000ACF0A /* DeviceIdentifier.h */,
+			);
+			name = Coverflow;
+			path = ../Coverflow;
+			sourceTree = "<group>";
+		};
+		552AA528E476451738AE6EAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF5961CACFE3B6610C1AE6EB /* Pods-FOAM.debug.xcconfig */,
+				1CC607D2EB2C0AD1DE72D8CD /* Pods-FOAM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E10EFB081CC13FA90002892A /* MetaDataView */ = {
+			isa = PBXGroup;
+			children = (
+				E10EFB051CC13F850002892A /* MetaDataViewMovies.h */,
+				E10EFB061CC13FA10002892A /* MetaDataViewMovies.m */,
+				E1B3B3C91E06EB34007DC158 /* MetaDataViewTVShows.h */,
+				E1B3B3CA1E06EB5C007DC158 /* MetaDataViewTVShows.m */,
+			);
+			name = MetaDataView;
+			sourceTree = "<group>";
+		};
+		E10EFB441CC268930002892A /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				E10EFB411CC268740002892A /* ImageLoader.h */,
+				E10EFB421CC2688B0002892A /* ImageLoader.m */,
+			);
+			name = ImageLoader;
+			sourceTree = "<group>";
+		};
+		E117CA591DFC7270001A8D9C /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				452250F116123719007FEECC /* CDemoCollectionViewCell.h */,
+				452250F216123719007FEECC /* CDemoCollectionViewCell.m */,
+				452250F316123719007FEECC /* CDemoCollectionViewController.h */,
+				452250F416123719007FEECC /* CDemoCollectionViewController.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		E117CA5A1DFC7284001A8D9C /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				452250EF16123719007FEECC /* CAppDelegate.h */,
+				452250F016123719007FEECC /* CAppDelegate.m */,
+			);
+			name = AppDelegates;
+			sourceTree = "<group>";
+		};
+		E117CA5E1DFC7328001A8D9C /* FetchContentData */ = {
+			isa = PBXGroup;
+			children = (
+				E117CA5D1DFC731F001A8D9C /* FetchContentData.h */,
+				E117CA5B1DFC7309001A8D9C /* FetchContentData.m */,
+			);
+			name = FetchContentData;
+			sourceTree = "<group>";
+		};
+		E117CA5F1DFD8736001A8D9C /* CoverflowTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				452251E616124093007FEECC /* CCoverflowTitleView.xib */,
+				452251E8161240A6007FEECC /* CCoverflowTitleView.h */,
+				452251E9161240A6007FEECC /* CCoverflowTitleView.m */,
+			);
+			name = CoverflowTitleView;
+			sourceTree = "<group>";
+		};
+		E15EC4A32221E4B60021D311 /* KodiControls */ = {
+			isa = PBXGroup;
+			children = (
+				E158F3B32221E2E800C26225 /* KodiControls.h */,
+				E15EC4A12221E4A70021D311 /* KodiControls.m */,
+			);
+			name = KodiControls;
+			sourceTree = "<group>";
+		};
+		E19360A023AD8089007D20AE /* isReachable */ = {
+			isa = PBXGroup;
+			children = (
+				E19360A123AD80CE007D20AE /* isReachable.m */,
+				E19360A323AD8167007D20AE /* isReachable.h */,
+			);
+			name = isReachable;
+			sourceTree = "<group>";
+		};
+		E19C0AAB1C9488B600D031CB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E1A6D36F2279C17900EA49B3 /* mirror_active.png */,
+				E1A6D3702279C18400EA49B3 /* mirror_inactive.png */,
+				E13B43D4227206DD007C80B9 /* 1x1-transparent.png */,
+				E13C4E2D2228D1CF005B87E2 /* tablet.png */,
+				E1497AF6238DBA5D0050286E /* play-yellow-kodi.png */,
+				E1497AF5238DBA5D0050286E /* play-yellow-trailer.png */,
+				E1497AF4238DBA5D0050286E /* play-yellow.png */,
+				E1F7148A240092BD007844F6 /* remote-yellow-kodi.png */,
+				E15EC4AA22235B890021D311 /* stop_big.png */,
+				E15EC4AC22235B920021D311 /* playpause_big.png */,
+				E15EC4A42222F6720021D311 /* remoteKODI.png */,
+				E184B3FF222032BD0004E817 /* placeholderEpisode.png */,
+				E1F788F6221DA86400807BB3 /* Icon.png */,
+				E1F788F4221DA7C400807BB3 /* Icon@2x.png */,
+				E1F788EE221CBF1600807BB3 /* SplashScreen.png */,
+				E1F788E7221AEDE700807BB3 /* AudioChannel.png */,
+				E1F788E6221AEDE700807BB3 /* Subtitles.png */,
+				E145E26C2218CCDE00AD99BD /* blue_slider_thumb.png */,
+				E145E2692218C7EA00AD99BD /* pause_big.png */,
+				E145E2682218C7EA00AD99BD /* play_big.png */,
+				E19C0AAC1C94899A00D031CB /* Default-568h@2x.png */,
+				E117CA601DFD90A1001A8D9C /* tvshow-active.png */,
+				E117CA631DFD90A1001A8D9C /* tvshow-inactive.png */,
+				E117CA611DFD90A1001A8D9C /* movies-active.png */,
+				E117CA621DFD90A1001A8D9C /* movies-inactive.png */,
+				E117CA641DFD90A1001A8D9C /* livetv-active.png */,
+				E117CA651DFD90A1001A8D9C /* livetv-inactive.png */,
+				E12C34D21C38995700BC94CE /* Movies.png */,
+				E12C34D01C3897F600BC94CE /* Trailers.png */,
+				E12C34CE1C38926800BC94CE /* back.png */,
+				E18A03691C90D60C0013BF7A /* back2.png */,
+				E10EFB0D1CC165B00002892A /* back3.png */,
+				E12C34C81C37139B00BC94CE /* cloud-reload.png */,
+				E11770C41C5D2B9200166CE6 /* config.png */,
+				E1A78D7D1C84D72F0064CC68 /* black.gif */,
+				E11770CC1C5D52BE00166CE6 /* compression.png */,
+				E186AD591C0A37AC009F94F4 /* loading.gif */,
+				E1D0853A1C8B4C8700114563 /* playOnKodiActive.png */,
+				E1D0853B1C8B4C8700114563 /* playOnKodiInActive.png */,
+				E1A208B11C960DBE002E5E2D /* checkFail.png */,
+				E1A208B21C960DBE002E5E2D /* checkPass.png */,
+				E1AF786F1D16FEE500E3D12C /* play.png */,
+				E1AF786D1D16FEDE00E3D12C /* trailer.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		E1B3B3C71E06E7F3007DC158 /* FOAM */ = {
+			isa = PBXGroup;
+			children = (
+				452250F516123719007FEECC /* FOAM-Info.plist */,
+				452250F616123719007FEECC /* FOAM-Prefix.pch */,
+			);
+			name = FOAM;
+			sourceTree = "<group>";
+		};
+		E1B3B3C81E06E814007DC158 /* MainFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E1550AD11CC4CA090034C130 /* InfoPlist.strings */,
+				452250FC16123719007FEECC /* MainStoryboard.storyboard */,
+				4522516816123719007FEECC /* main.m */,
+			);
+			name = MainFiles;
+			sourceTree = "<group>";
+		};
+		E1F610F41C94B6C60044ABAF /* ImageColorManipulator */ = {
+			isa = PBXGroup;
+			children = (
+				E12C34D41C39518700BC94CE /* UIImageAverageColorAddition.h */,
+				E12C34D51C3951E900BC94CE /* UIImageAverageColorAddition.m */,
+				E12C34D71C39569C00BC94CE /* UIImageBurnColorAddition.h */,
+				E12C34D81C39573300BC94CE /* UIImageBurnColorAddition.m */,
+			);
+			name = ImageColorManipulator;
+			sourceTree = "<group>";
+		};
+		E1F610F51C94B6DF0044ABAF /* CircularArray */ = {
+			isa = PBXGroup;
+			children = (
+				E1C865A31C4337CF004E6E6A /* CircularNSMutableArray.m */,
+				E1C865A51C433826004E6E6A /* CircularNSMutableArray.h */,
+			);
+			name = CircularArray;
+			sourceTree = "<group>";
+		};
+		E1F610F91C94B9A50044ABAF /* KodiConfig */ = {
+			isa = PBXGroup;
+			children = (
+				E1F610F81C94B9990044ABAF /* KodiConfig.h */,
+				E1F610F61C94B9870044ABAF /* KodiConfig.m */,
+				E1A1241F1C8BA09700625116 /* configKodi.plist */,
+			);
+			name = KodiConfig;
+			sourceTree = "<group>";
+		};
+		E1F788E5221AD21800807BB3 /* MobileVLCKitPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2C80497C2212D46F00B9C29E /* VideoPlayerViewController.h */,
+				2C80497D2212D46F00B9C29E /* VideoPlayerViewController.m */,
+			);
+			name = MobileVLCKitPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456BDDCE1610896400398F00 /* FOAM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456BDDF31610896400398F00 /* Build configuration list for PBXNativeTarget "FOAM" */;
+			buildPhases = (
+				F30F771435D1B08DD9B2FB5C /* [CP] Check Pods Manifest.lock */,
+				C24894B6B3FC6D0A38E94EAE /* Check Pods Manifest.lock */,
+				456BDDCB1610896400398F00 /* Sources */,
+				456BDDCC1610896400398F00 /* Frameworks */,
+				456BDDCD1610896400398F00 /* Resources */,
+				E1BB13881C0AA5B20027CC77 /* CopyFiles */,
+				158C1ED3218A916A60F50891 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FOAM;
+			productName = Coverflow;
+			productReference = 456BDDCF1610896400398F00 /* FOAM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456BDDC61610896400398F00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = C;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = toxicsoftware;
+				TargetAttributes = {
+					456BDDCE1610896400398F00 = {
+						DevelopmentTeam = 66TKB3RCC6;
+					};
+				};
+			};
+			buildConfigurationList = 456BDDC91610896400398F00 /* Build configuration list for PBXProject "FOAM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456BDDC41610896400398F00;
+			productRefGroup = 456BDDD01610896400398F00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456BDDCE1610896400398F00 /* FOAM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		456BDDCD1610896400398F00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F788F7221DA86500807BB3 /* Icon.png in Resources */,
+				E13B43D5227206DE007C80B9 /* 1x1-transparent.png in Resources */,
+				E12C34D11C3897F600BC94CE /* Trailers.png in Resources */,
+				E1497AF7238DBA5D0050286E /* play-yellow.png in Resources */,
+				E1A6D3712279C18400EA49B3 /* mirror_active.png in Resources */,
+				E117CA671DFD90A1001A8D9C /* movies-active.png in Resources */,
+				E1497AF9238DBA5D0050286E /* play-yellow-kodi.png in Resources */,
+				E1F788E8221AEDE700807BB3 /* Subtitles.png in Resources */,
+				E1A208B31C960DBE002E5E2D /* checkFail.png in Resources */,
+				E15EC4AB22235B890021D311 /* stop_big.png in Resources */,
+				E117CA691DFD90A1001A8D9C /* tvshow-inactive.png in Resources */,
+				E11770C51C5D2B9200166CE6 /* config.png in Resources */,
+				E13C4E2E2228D1CF005B87E2 /* tablet.png in Resources */,
+				E1D0853D1C8B4C8700114563 /* playOnKodiInActive.png in Resources */,
+				E184B400222032BD0004E817 /* placeholderEpisode.png in Resources */,
+				E1A208B41C960DBE002E5E2D /* checkPass.png in Resources */,
+				E186AD5A1C0A37AC009F94F4 /* loading.gif in Resources */,
+				E12C34D31C38995700BC94CE /* Movies.png in Resources */,
+				E1AF78701D16FEE500E3D12C /* play.png in Resources */,
+				E1550AD21CC4CA090034C130 /* InfoPlist.strings in Resources */,
+				E1A78D7E1C84D72F0064CC68 /* black.gif in Resources */,
+				E145E26D2218CCDE00AD99BD /* blue_slider_thumb.png in Resources */,
+				E117CA661DFD90A1001A8D9C /* tvshow-active.png in Resources */,
+				E145E26B2218C7EA00AD99BD /* pause_big.png in Resources */,
+				E117CA6A1DFD90A1001A8D9C /* livetv-active.png in Resources */,
+				E11770CD1C5D52BE00166CE6 /* compression.png in Resources */,
+				E10EFB0E1CC165B00002892A /* back3.png in Resources */,
+				E1F788E9221AEDE700807BB3 /* AudioChannel.png in Resources */,
+				E1AF786E1D16FEDE00E3D12C /* trailer.png in Resources */,
+				E12C34CF1C38926800BC94CE /* back.png in Resources */,
+				E15EC4AD22235B920021D311 /* playpause_big.png in Resources */,
+				E19C0AAD1C94899A00D031CB /* Default-568h@2x.png in Resources */,
+				E117CA681DFD90A1001A8D9C /* movies-inactive.png in Resources */,
+				E1A6D3722279C18400EA49B3 /* mirror_inactive.png in Resources */,
+				E1F7148B240092BD007844F6 /* remote-yellow-kodi.png in Resources */,
+				E1709AF9220DBECB00A7206D /* Settings.bundle in Resources */,
+				4522517116123719007FEECC /* MainStoryboard.storyboard in Resources */,
+				E15EC4A52222F6720021D311 /* remoteKODI.png in Resources */,
+				E12C34C91C37139B00BC94CE /* cloud-reload.png in Resources */,
+				E1497AF8238DBA5D0050286E /* play-yellow-trailer.png in Resources */,
+				E1A124201C8BA09700625116 /* configKodi.plist in Resources */,
+				E1D0853C1C8B4C8700114563 /* playOnKodiActive.png in Resources */,
+				E117CA6B1DFD90A1001A8D9C /* livetv-inactive.png in Resources */,
+				452251E716124093007FEECC /* CCoverflowTitleView.xib in Resources */,
+				E1F788F5221DA7C400807BB3 /* Icon@2x.png in Resources */,
+				E18A036A1C90D60C0013BF7A /* back2.png in Resources */,
+				E1F788EF221CBF1600807BB3 /* SplashScreen.png in Resources */,
+				E145E26A2218C7EA00AD99BD /* play_big.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		158C1ED3218A916A60F50891 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FOAM/Pods-FOAM-resources.sh",
+				"${PODS_ROOT}/youtube-ios-player-helper/youtube-ios-player-helper/Assets.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FOAM/Pods-FOAM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C24894B6B3FC6D0A38E94EAE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F30F771435D1B08DD9B2FB5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FOAM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456BDDCB1610896400398F00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4576D0BA161236A10006877C /* CBetterCollectionViewCell.m in Sources */,
+				E1F610F71C94B9870044ABAF /* KodiConfig.m in Sources */,
+				E1C865A41C4337CF004E6E6A /* CircularNSMutableArray.m in Sources */,
+				4576D0BB161236A10006877C /* CBetterCollectionViewLayoutAttributes.m in Sources */,
+				E12C34D91C39573300BC94CE /* UIImageBurnColorAddition.m in Sources */,
+				4576D0BC161236A10006877C /* CCoverflowCollectionViewLayout.m in Sources */,
+				E15EC4A22221E4A70021D311 /* KodiControls.m in Sources */,
+				E10EFB431CC2688B0002892A /* ImageLoader.m in Sources */,
+				4576D0BD161236A10006877C /* CInterpolator.mm in Sources */,
+				4576D0BE161236A10006877C /* Interpolator.cpp in Sources */,
+				4522516916123719007FEECC /* CAppDelegate.m in Sources */,
+				4522516A16123719007FEECC /* CDemoCollectionViewCell.m in Sources */,
+				E10EFB071CC13FA10002892A /* MetaDataViewMovies.m in Sources */,
+				4522516B16123719007FEECC /* CDemoCollectionViewController.m in Sources */,
+				E1E383951C1C55BD000ACF0A /* DeviceIdentifier.m in Sources */,
+				2C80497E2212D46F00B9C29E /* VideoPlayerViewController.m in Sources */,
+				E1B3B3CB1E06EB5C007DC158 /* MetaDataViewTVShows.m in Sources */,
+				E19360A223AD80CE007D20AE /* isReachable.m in Sources */,
+				452251DB16123719007FEECC /* main.m in Sources */,
+				E12C34D61C3951E900BC94CE /* UIImageAverageColorAddition.m in Sources */,
+				452251EA161240A6007FEECC /* CCoverflowTitleView.m in Sources */,
+				E117CA5C1DFC7309001A8D9C /* FetchContentData.m in Sources */,
+				45C56F3F1612A5120066CADB /* CReflectionView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		452250FC16123719007FEECC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F85846240AD09D00B0BC56 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		456BDDF11610896400398F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		456BDDF21610896400398F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456BDDF41610896400398F00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5961CACFE3B6610C1AE6EB /* Pods-FOAM.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 66TKB3RCC6;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coverflow/FOAM-Prefix.pch";
+				INFOPLIST_FILE = "Coverflow/FOAM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foam.org.masikh;
+				PRODUCT_NAME = FOAM;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		456BDDF51610896400398F00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC607D2EB2C0AD1DE72D8CD /* Pods-FOAM.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 66TKB3RCC6;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coverflow/FOAM-Prefix.pch";
+				INFOPLIST_FILE = "Coverflow/FOAM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = foam.org.masikh;
+				PRODUCT_NAME = FOAM;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456BDDC91610896400398F00 /* Build configuration list for PBXProject "FOAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456BDDF11610896400398F00 /* Debug */,
+				456BDDF21610896400398F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456BDDF31610896400398F00 /* Build configuration list for PBXNativeTarget "FOAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456BDDF41610896400398F00 /* Debug */,
+				456BDDF51610896400398F00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456BDDC61610896400398F00 /* Project object */;
+}
